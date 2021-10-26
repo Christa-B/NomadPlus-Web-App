@@ -1,0 +1,75 @@
+.body{
+    background-color: #3A3B3C;
+}
+
+.navbar{
+    background-color: #FF3366;
+}
+
+.footer{
+    text-align: right;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.form{
+  float: center;
+  text-align: center;
+}
+
+
+.input-label{
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    color:white;
+    font-weight: bold;
+    margin-top: 1rem;
+    width: 120px;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.input-group{
+    padding-left: 330px;
+}
+
+.section{
+  margin-top: 40px;
+  background-color: rgb(112, 48, 64);
+}
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 382px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #FFAF7A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+  }

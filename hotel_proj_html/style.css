@@ -1,0 +1,68 @@
+.body{
+    background-color: #3A3B3C;
+}
+
+.navbar{
+    /*background-image : linear-gradient(to left, #FF3366, #BA265D)*/
+    background-color: #FF3366;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 10;
+    top:40%;
+    width:100%;
+    text-align: left;
+    border-radius: 0;
+}
+
+.overlay h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 120px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.d-flex{
+    margin: 0;
+    padding: 0;
+}
+
+.search-button{
+    background-color: #FFAF7A; 
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.carousel-item{
+    z-index: 1;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.4;
+    padding-bottom: 56.25%;
+}
+
+.footer{
+    text-align: right;
+    position: absolute;
+    padding-top: 20px;
+}
