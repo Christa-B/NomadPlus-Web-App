@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body class="body body-dark">
+  <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Nomad+</a>
+
+            <!--NAVIGATION BAR TOGGLE BUTTON; turns navigation items into smaller button when resizing view-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data.bs-target="#navmenu">
+              <spann class= "navbar-toggler-icon"></span>
+            </button>
+
+            <!--NAVIGATION BAR ITEMS-->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class ="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#user_reservation" class="nav-link">My Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#user_account" class="nav-link">Account Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#logout" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#logout" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--INPUT FIELDS-->
+    <form class="form">
+        <h5 class="text-uppercase text-light" style="padding: 20px;">Login Here</h5>
+        <div class="input-group">
+            <label for="email" class="input-label"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="psw" class="input-label"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+        <div class="submit-button">
+            <button type="submit">Login</button>
+        </div>
+        <div class="registration-link text-light">
+            Don't have an account?
+            <a class="link" style="color: orange;" href="https://nomadplus.com/sign-up">Sign up here.</a>
+        </div>
+        
+    </form>
+            
+    <section class="section">
+        <footer class="text-center text-lg-start footer-dark">
+            <div class="container p-4">
+                  <p class="text-light text-center"> 
+                      By signing in or creating an account, you agree with our Terms & Conditions and Privacy Statement.
+                  </p>
+                  <p class="text-light text-center"> 
+                      At Nomad+, we do not sell any of your personal information.
+                  </p>
+            </div>
+    </section>
+    
+
+      <!--COPYRIGHT-->
+      <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-light" href="https://nomadplus.com/">NomadPlus.com</a>
+      </div>
+    </footer>
+    
+</body>
+</html>

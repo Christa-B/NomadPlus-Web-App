@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body class="body body-dark">
+  <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Nomad+</a>
+
+            <!--NAVIGATION BAR TOGGLE BUTTON; turns navigation items into smaller button when resizing view-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data.bs-target="#navmenu">
+                <span class= "navbar-toggler-icon"></span>
+            </button>
+
+            <!--NAVIGATION BAR ITEMS-->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class ="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#user_reservation" class="nav-link">My Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#user_account" class="nav-link">Account Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#logout" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#logout" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--OVERLAY TEXT/INPUT ITEMS-->
+    <div class="overlay overlay-expand-lg">
+        <div class="container">
+            <h4>Start planning for your next getaway now </h4>
+        </div>
+        
+    </div>
+   
+    <!--CAROUSEL/MOVING IMAGES -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://i.postimg.cc/G2jkqLK6/1-700.png" class="d-block w-100" alt="Slide One">
+            </div>
+            <div class="carousel-item">
+            <img src="https://i.postimg.cc/Qxzc6ngN/2-700.png" class="d-block w-100" alt="Slide Two">
+            </div>
+            <div class="carousel-item">
+            <img src="https://i.postimg.cc/nznmj8x2/3-700.png" class="d-block w-100" alt="Slide Three">
+            </div>
+        </div>
+    </div>
+
+    <!--BOOKING STUFF-->
+    <section class="booking">
+        <div class="container">
+            <h5 class="text-center text-uppercase text-light" style="padding: 20px;">Start here</h5>
+            <form action="" class="form">
+                <!--LOCATION-->
+                <div class="input-group">
+                    <label for="destination" class="input-label">Destination </label>
+                    <input type="text" placeholder="Enter here" style="padding-left: 12px">
+                </div>
+                <!--CHECK-IN/CHECK-OUT DATEPICKERS-->
+                <div class="input-group">
+                    <label for="check-in" class="input-label">Check in </label>
+                    <div class="datepicker">
+                        <input type="date" id="datepicker" class="form-control">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="check-out" class="input-label">Check out </label>
+                    <div class="datepicker">
+                        <input type="date" id="datepicker" class="form-control">
+                    </div>
+                </div>
+                <!--GUESTS-->
+                <div class="input-group">
+                    <label for="adults" class="input-label">Guests </label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="3">7</option>
+                    </select>
+                </div>
+                <!--NUMBER OF ROOMS-->
+                <div class="input-group">
+                    <label for="destination" class="input-label">Rooms </label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="3">7</option>
+                    </select>
+                </div>
+                <!--ROOM TYPES-->
+                <div class="input-group">
+                    <label for="destination" class="input-label">Room type </label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Standard</option>
+                        <option value="2">Queen</option>
+                        <option value="3">King</option>
+                    </select>
+                </div>
+                <!--AMENITIES-->
+                <div class="input-group">
+                    <label for="destination" class="input-label">Amenities </label>
+                    <select class="selectpicker" data-width="353px" multiple aria-label="Default select example">
+                        <option value="1">Gym</option>
+                        <option value="2">Pool</option>
+                        <option value="3">Spa</option>
+                        <option value="3">Business office</option>
+                        <option value="3">Wifi</option>
+                    </select>
+                </div>
+                <!--PRICE RANGES-->
+                <div class="input-group">
+                    <label for="destination" class="input-label">Price range </label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Cheap</option>
+                        <option value="2">Middle</option>
+                        <option value="3">Luxury</option>
+                    </select>
+                </div>    
+            <!--SEARCH BUTTON-->
+                <div class="search-button" style="margin-bottom: 30px;">
+                  <button class="btn btn-1">Search</button>
+                </div> 
+            </div>
+            </form>
+        </div>
+        <div class="image">
+            <img src="https://i.postimg.cc/597z0kR5/skyline2.png">
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="text-center text-lg-start footer-dark">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">Why choose Nomad+?</h5>
+                    <p class="text-light"> 
+                    At Nomad+, we believe that travel should be always be made easy-peasy, lemon-squeezy.
+                    We prioritize enhancing the experience of our members in all processes from hotel management, booking,
+                    and planning.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">Contact Us</h5>
+                    <p class="text-light">
+                        <b>CALL FOR BOOKINGS:</b> &emsp; 855-308-6410
+                    </p>
+                    <p class="text-light">
+                        <b>SEND US AN EMAIL:</b> &emsp; &ensp; support@nomadplus.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+      <!--COPYRIGHT-->
+      <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-light" href="https://nomadplus.com/">NomadPlus.com</a>
+      </div>
+    </footer>
+      
+    <!--JQUERY: MUST BE INCLUDED FOR SOME FUNCTIONALITIES-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
